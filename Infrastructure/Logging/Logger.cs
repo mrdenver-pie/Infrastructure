@@ -81,6 +81,7 @@ namespace Logging
             [CallerLineNumber] int callerLine = 0)
         {
             Log(LogLevel.Debug, message, exception, callerPath, callerMember, callerLine);
+            Log(LogLevel.Debug, message, exception, callerPath, callerMember, callerLine);
         }
 
         /// <summary>
