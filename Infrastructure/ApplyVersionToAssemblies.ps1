@@ -162,8 +162,8 @@ if($files)
 
 			attrib $file -r
 			$filecontent |
-				%{$_ -replace 'AssemblyCompany\(.*\)', "AssemblyCompany(""State of Colorado"")" } |
-				%{$_ -replace 'AssemblyCopyright\(.*\)', "AssemblyCopyright(""Copyright © 2017"")" } |
+				%{$_ -replace 'AssemblyCompany\(.*\)', "AssemblyCompany(""Zteam.Dev"")" } |
+				%{$_ -replace 'AssemblyCopyright\(.*\)', "AssemblyCopyright(""Copyright © 2018"")" } |
 				%{$_ -replace 'AssemblyConfiguration\(.*\)', "AssemblyConfiguration(""$BuildConfiguration"")" } |
 				%{$_ -replace 'AssemblyVersion\("[0-9]+(\.([0-9]+|\*)){1,3}"\)', "AssemblyVersion(""$assemblyVersion"")" } |
 				%{$_ -replace 'AssemblyFileVersion\("[0-9]+(\.([0-9]+|\*)){1,3}"\)', "AssemblyFileVersion(""$assemblyFileVersion"")" } |
